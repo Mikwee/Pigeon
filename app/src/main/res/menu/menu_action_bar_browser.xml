@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_upload"
+        android:icon="@drawable/action_bar_browser_upload"
+        android:title="Upload"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/action_bar_browser_sort"
+        android:title="Sort"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_wakkamole"
+        android:icon="@drawable/action_bar_main_wakkamole"
+        android:title="@string/action_bar_main_wakkamole"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/action_bar_main_settings"
+        android:title="@string/action_bar_main_settings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_credits"
+        android:icon="@drawable/action_bar_main_credits"
+        android:title="@string/action_bar_main_credits"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_close_selection"
+        android:icon="@drawable/selection_bar_close"
+        android:title="Close"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

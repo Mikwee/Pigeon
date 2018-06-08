@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffe082</color>
+    <color name="colorPrimaryDark">#ffca28</color>
+    <color name="colorAccent">#29b6f6</color>
+
+    <color name="colorPositive">#64008f3c</color>
+    <color name="colorNegative">#83ff5252</color>
+    <color name="colorDarken">#28000000</color>
+
+
+    <color name="colorIntermediate">#ff8652</color>
+    <color name="colorIntermediateOld">#FFFFE082</color>
+    <color name="colorDefaultBackground">#fafafa</color>
+
+
+    <color name="colorOverlayBlack">#c8000000</color>
+    <color name="colorOverlayWhite">#96ffffff</color>
+
+    <color name="fileTypeFolder">#FFCA28</color>
+    <color name="fileTypeArchive">#F9C866</color>
+    <color name="fileTypeVideo">#E73934</color>
+    <color name="fileTypeAudio">#49B050</color>
+    <color name="fileTypeText">#775BA7</color>
+    <color name="fileTypeImage">#1998A8</color>
+
+    <color name="fileTypeGeneric">#5D85C4</color>
+
+
+
+
+
+</resources>

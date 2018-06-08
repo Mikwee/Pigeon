@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mikwee.timebrowser.activities.SmbActivity">
+
+
+    <!--title-->
+    <TextView
+        android:id="@+id/d_file_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="sans-serif-light"
+        android:text="@string/dialog_info_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_subtitle"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--name-->
+    <TextView
+        android:id="@+id/d_file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="6dp"
+
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/dialog_info_name"
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_file_title" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/d_file_name"
+        app:layout_constraintLeft_toRightOf="@+id/d_file_name"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="6dp"
+
+            android:textSize="@dimen/activity_subtitle_ss"
+            tools:text="nameno.odio" />
+
+    </HorizontalScrollView>
+
+
+    <!--full path-->
+    <TextView
+        android:id="@+id/d_file_full_name"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="6dp"
+
+        android:fontFamily="sans-serif-light"
+        android:text="@string/dialog_info_path"
+        android:textSize="@dimen/activity_subtitle_ss"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_file_name" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/d_file_full_name"
+        app:layout_constraintLeft_toRightOf="@+id/d_file_full_name"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/file_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+
+            android:textSize="@dimen/activity_subtitle_ss"
+
+            android:textStyle="italic"
+            tools:text="cacca/brutta/nameno.odio" />
+    </HorizontalScrollView>
+
+    <!--separator 1-->
+    <View
+        android:id="@+id/separator_1"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/d_file_full_name" />
+
+
+    <!--size-->
+    <TextView
+        android:id="@+id/d_file_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="6dp"
+
+        android:fontFamily="sans-serif-light"
+
+        android:text="@string/dialog_info_size"
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator_1" />
+
+    <TextView
+        android:id="@+id/file_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="6dp"
+
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintBottom_toBottomOf="@+id/d_file_size"
+        app:layout_constraintLeft_toRightOf="@+id/d_file_size"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="123kib" />
+
+    <!--creation time-->
+    <TextView
+        android:id="@+id/d_create_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="6dp"
+
+        android:fontFamily="sans-serif-light"
+        android:text="@string/dialog_info_created"
+
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_file_size" />
+
+    <TextView
+        android:id="@+id/create_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintBottom_toBottomOf="@+id/d_create_time"
+        app:layout_constraintLeft_toRightOf="@+id/d_create_time"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="25 gen 1994" />
+
+    <!--last modified time-->
+    <TextView
+        android:id="@+id/d_last_modified"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="6dp"
+
+        android:fontFamily="sans-serif-light"
+        android:text="@string/dialog_info_modified"
+
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_create_time" />
+
+    <TextView
+        android:id="@+id/last_modified"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+
+        android:text="25 gen 1995"
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintBottom_toBottomOf="@+id/d_last_modified"
+        app:layout_constraintLeft_toRightOf="@+id/d_last_modified"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--access -->
+    <TextView
+        android:id="@+id/attributes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="6dp"
+
+
+        android:fontFamily="sans-serif-light"
+
+        android:text="@string/dialog_info_access_title"
+        android:textSize="@dimen/activity_subtitle_ss"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_last_modified" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attributes">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+            <!--isHidden-->
+            <TextView
+                android:id="@+id/is_hidden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+
+                android:background="@drawable/bg_round"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/dialog_info_hidden"
+                android:textAllCaps="true" />
+
+            <!--is Writable-->
+            <TextView
+                android:id="@+id/is_writable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bg_round_positive"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+
+                android:text="@string/dialog_info_writable"
+                android:textAllCaps="true" />
+
+            <!--is Accessible-->
+            <TextView
+                android:id="@+id/is_access_denied"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="6dp"
+                android:background="@drawable/bg_round_negative"
+                android:gravity="center"
+
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/dialog_info_access_denied"
+
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <!-- Loading overlay-->
+    <View
+        android:id="@+id/info_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorDefaultBackground"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/info_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

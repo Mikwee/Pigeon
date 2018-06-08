@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">TimeBrowser</string>
+
+    <!--+++++++++++++++++++++++++++++++++++++ FRAGMENTS +++++++++++++++++++++++++++++++++++++++++-->
+
+
+    <!-- POSITIVE FRAGMENT -->
+    <string name="positive_button_scan">Scan network</string>
+    <string name="positive_title">You\'re connected to:</string>
+    <string name="positive_button_detail">to find all computers connected</string>
+
+
+    <!-- NEGATIVE FRAGMENT -->
+    <string name="negative_title">Wifi is off.</string>
+    <string name="negative_subtitle">I\'ll try turning it on for you</string>
+    <string name="negative_subtitle_failed">I couldn\'t turn wifi on, do it manually.</string>
+
+
+    <!-- INTERMEDIATE FRAGMENT -->
+    <string name="intermediate_disconnected">Wifi is on, but you\'re not connected to any network</string>
+    <string name="intermediate_connecting">Connecting…</string>
+    <string name="intermediate_disconnecting">Disconnecting…</string>
+
+
+    <!-- SEARCH FRAGMENT -->
+    <string name="search_scanning_title">Scanning…</string>
+
+
+    <!-- SEARCH RESULT FRAGMENT -->
+    <string name="search_scan_again">Scan again</string>
+    <string name="search_title">Computers found</string>
+    <string name="search_machines_found">Computers found </string>
+    <string name="search_no_machines">No computers found on network</string>
+
+    <string name="requires_pass_true">Requires password </string>
+    <string name="requires_pass_false">No password </string>
+
+
+    <!-- LOGIN FRAGMENT -->
+    <string name="login_host_name">Name</string>
+    <string name="login_title">Access </string>
+    <string name="login_button">login</string>
+    <string name="login_remember">remember</string>
+    <string name="login_empty_up">Username or password can\'t be empty!</string>
+
+
+    <!-- BROWSER FRAGMENT-->
+    <string name="bf_no_handler">No handler for this type of file.</string>
+
+    <string name="bf_notif_upload_title">File uploading</string>
+    <string name="bf_notif_upload_content">Upload in progress</string>
+    <string name="bf_upload_complete">Upload complete</string>
+
+    <string name="bf_notif_download_title">File downloading</string>
+    <string name="bf_notif_download_content">Download in progress</string>
+    <string name="bf_download_complete">Download complete</string>
+
+    <string name="bf_delete_success">File deleted successfully</string>
+
+    <string name="bf_opening_file">Opening file</string>
+    <string name="empty_dir">Empty folder.</string>
+
+
+    <!-- CREDITS ACTIVITY-->
+    <string name="credits_description">18 years old, occasional Android developer based in Turin</string>
+    <string name="credits_mail">mikwee1@gmail.com</string>
+    <string name="credits_name">Matteo Giardino (Mikwee)</string>
+    <string name="credits_title">Project developed by</string>
+
+
+    <string name="title_activity_wakkamole">Wakkamole</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- SETTINGS ACTIVITY-->
+    <string name="preferences_explorer">File explorer</string>
+
+    <string name="preferences_show_hidden_key">show_hidden_files</string>
+    <string name="preferences_show_hidden_title">Show hidden files</string>
+    <string name="preferences_show_hidden_on">Hidden files are shown</string>
+    <string name="preferences_show_hidden_off">Hidden files are not shown</string>
+
+
+    <string name="preferences_layout_summary">How the files are displayed</string>
+    <string name="preferences_layout_type_key">file_layout_type</string>
+    <string name="preferences_layout_type_title">File items layout</string>
+
+
+
+
+    <!--++++++++++++++++++++++++++++++ DIALOGS AND MENUS ++++++++++++++++++++++++++++++++++++++++-->
+
+    <!-- DIALOG CHOOSER-->
+    <string name="dialog_chooser_download_title">Select where to download</string>
+    <string name="dialog_chooser_upload_title">Select what to upload</string>
+
+    <string name="dialog_chooser_download_positive">Download here</string>
+    <string name="dialog_chooser_upload_positive">Upload selected</string>
+
+    <string name="dialog_chooser_negative">Close</string>
+
+    <string name="dialog_chooser_download_started">Download started</string>
+    <string name="dialog_chooser_upload_started">Upload started</string>
+
+    <string name="dialog_chooser_add_folder">Add folder</string>
+    <string name="dialog_chooser_add_folder_hint">Enter folder name</string>
+    <string name="dialog_chooser_error_creating_folder">Error creating folder</string>
+    <string name="dialog_chooser_empty_folder_name">Add a folder name</string>
+
+
+    <!-- DIALOG FILE INFO-->
+    <string name="dialog_info_title">File info</string>
+    <string name="dialog_info_close">close</string>
+
+    <string name="dialog_info_name">Name:</string>
+    <string name="dialog_info_path">Path:</string>
+    <string name="dialog_info_size">Size:</string>
+    <string name="dialog_info_created">Created:</string>
+    <string name="dialog_info_modified">Modified:</string>
+
+    <string name="dialog_info_access_title">Access</string>
+    <string name="dialog_info_hidden">Hidden</string>
+    <string name="dialog_info_writable">Writable</string>
+    <string name="dialog_info_access_denied">Access denied</string>
+
+
+    <!-- ACTION BAR MAIN-->
+    <string name="action_bar_main_wakkamole">Wakkamole</string>
+    <string name="action_bar_main_settings">Settings</string>
+    <string name="action_bar_main_credits">Credits</string>
+
+
+    <!-- SELECTED ITEM ACTIONBAR-->
+    <string name="item_selected">Selected </string>
+    <string name="items_selected">Selected </string>
+
+
+    <!-- MENU FILE ACTIONS-->
+    <string name="menu_file_actions_info">Info</string>
+    <string name="menu_file_actions_download">Download</string>
+    <string name="menu_file_actions_delete">Delete</string>
+    <string name="menu_file_actions_share">Share</string>
+
+
+    <!--+++++++++++++++++++++++++++++++++++++ OTHER ++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <!-- SORT METHODS-->
+    <string name="sort_size_ascending">Ascending size</string>
+    <string name="sort_size_descending">Descending size</string>
+    <string name="sort_folder_first">Folders first</string>
+    <string name="sort_files_first">Files first</string>
+
+
+    <!--Unit ID for an interstitial Ad.-->
+    <string name="interstitial_ad_unit_id">ca-app-pub-7075333707608026/9563010629</string>
+
+
+    <!--ERROR PART1-->
+    <string name="error_at_brows">Could not brows file: </string>
+    <string name="error_at_open">Could not open file: </string>
+    <string name="error_at_upload">Could not upload: </string>
+    <string name="error_at_info">Could not get file info: </string>
+    <string name="error_at_delete">Could not delete: </string>
+    <string name="error_at_download">Could not download file: </string>
+
+    <string name="error_generic">An error occurred</string>
+    <string name="error_login">Logon failure: unknown user name or bad password.</string>
+
+    <!--NOTIFICATION-->
+    <string name="notif_download_current">Downloading </string>
+    <string name="notif_upload_current">Uploading </string>
+
+    <string name="notif_left">left: </string>
+    <string name="notif_success">success: </string>
+    <string name="notif_failed">failed: </string>
+
+
+</resources>

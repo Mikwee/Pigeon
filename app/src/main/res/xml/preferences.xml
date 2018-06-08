@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/preferences_explorer">
+
+        <SwitchPreference
+            android:key="@string/preferences_show_hidden_key"
+            android:title="@string/preferences_show_hidden_title"
+            android:summaryOn="@string/preferences_show_hidden_on"
+            android:summaryOff="@string/preferences_show_hidden_off"
+            android:defaultValue="true" />
+
+
+        <ListPreference
+            android:key="@string/preferences_layout_type_key"
+            android:title="@string/preferences_layout_type_title"
+            android:entries="@array/preferences_layout_type"
+            android:summary="@string/preferences_layout_summary"
+            android:entryValues="@array/preferences_layout_type_values"
+            android:defaultValue="0"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

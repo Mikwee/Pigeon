@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Text font size< -->
+    <dimen name="activity_title">40sp</dimen>
+    <dimen name="activity_title_s">32sp</dimen>
+
+    <dimen name="activity_subtitle">27sp</dimen>
+    <dimen name="activity_subtitle_s">23sp</dimen>
+    <dimen name="activity_subtitle_ss">17sp</dimen>
+
+    <dimen name="activity_button">22sp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

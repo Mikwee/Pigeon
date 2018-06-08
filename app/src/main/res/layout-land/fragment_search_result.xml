@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mikwee.timebrowser.activities.MainActivity"
+    android:background="@color/colorDefaultBackground">
+
+    <!--title-->
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="sans-serif-light"
+        android:text="@string/search_title"
+        android:textSize="@dimen/activity_subtitle"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--computer list found -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hosts_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+
+        android:layout_marginTop="4dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_title">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!-- no computer found-->
+    <TextView
+        android:id="@+id/no_machines"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/search_no_machines"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textColor="@color/colorNegative"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/button_again"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_title"/>
+
+    <!-- scan again button-->
+    <Button
+        android:id="@+id/button_again"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_round"
+        android:drawablePadding="8dp"
+
+        android:drawableRight="@drawable/search_refresh"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:paddingStart="10dp"
+        android:text="@string/search_scan_again"
+        android:textSize="@dimen/activity_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawableEnd="@drawable/search_refresh" />
+
+
+</android.support.constraint.ConstraintLayout>

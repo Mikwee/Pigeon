@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_wakkamole"
+        android:title="@string/action_bar_main_wakkamole"
+        android:icon="@drawable/action_bar_main_wakkamole"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_bar_main_settings"
+        android:icon="@drawable/action_bar_main_settings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_credits"
+        android:title="@string/action_bar_main_credits"
+        android:icon="@drawable/action_bar_main_credits"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

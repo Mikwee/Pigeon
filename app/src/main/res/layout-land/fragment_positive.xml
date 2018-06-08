@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPositive"
+    tools:context="com.mikwee.timebrowser.activities.MainActivity">
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/home_positive_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-light"
+
+        android:text="@string/positive_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_subtitle"
+        app:layout_constraintBottom_toTopOf="@+id/ssid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineScan" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorDarken"
+        app:layout_constraintBottom_toBottomOf="@id/ssid"
+        app:layout_constraintTop_toTopOf="@id/ssid" />
+
+    <!-- network name -->
+    <TextView
+        android:id="@+id/ssid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+
+        android:text="home network"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_title"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineScan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!--  ip -->
+    <TextView
+        android:id="@+id/ip_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+
+        android:fontFamily="sans-serif-light"
+        android:gravity="end"
+        android:text="IP:"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+
+        android:text="000.000.000.000"
+        android:textSize="@dimen/activity_subtitle_s"
+
+        app:layout_constraintLeft_toRightOf="@+id/guideline4"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineScan"
+        app:layout_constraintTop_toBottomOf="@+id/ssid" />
+
+    <!-- netmask-->
+    <TextView
+
+        android:id="@+id/netmask_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+
+        android:fontFamily="sans-serif-light"
+        android:gravity="end"
+        android:text="NETMASK:"
+        android:textAlignment="viewEnd"
+
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintBaseline_toBaselineOf="@+id/netmask"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/netmask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+
+        android:text="000.000.000.000"
+        android:textSize="@dimen/activity_subtitle_s"
+
+        app:layout_constraintLeft_toRightOf="@+id/guideline4"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineScan"
+        app:layout_constraintTop_toBottomOf="@+id/ip" />
+
+    <!-- scan network -->
+
+    <Button
+        android:id="@+id/button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_round"
+        android:padding="8dp"
+        android:text="@string/positive_button_scan"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ssid"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineScan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ssid" />
+
+    <!-- detail text -->
+    <TextView
+        android:id="@+id/precisation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="sans-serif-light"
+        android:text="@string/positive_button_detail"
+
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_subtitle_ss"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineScan"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ssid" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+
+</android.support.constraint.ConstraintLayout>

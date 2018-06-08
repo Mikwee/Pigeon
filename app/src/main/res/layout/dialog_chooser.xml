@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--Custom Title-->
+    <TextView
+        android:id="@+id/dialog_chooser_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingTop="10dp"
+        tools:text="Select where to download"
+        android:textAlignment="center"
+        android:textSize="@dimen/activity_subtitle_s"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--explorer background-->
+    <View
+        android:id="@+id/bg_explorer"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_chooser_title" />
+
+    <!--explorer arrow-->
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@id/bg_explorer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_explorer" />
+
+    <!--directory list-->
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/horizontal_explorer"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:scrollbarSize="3dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/bg_explorer"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_explorer">
+
+        <TextView
+            android:id="@+id/folder_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            tools:text="ciao/ciaociao/ciaociao/ciaociao/ciao/ciaociao/ciao/ciaociao/ciao" />
+
+    </HorizontalScrollView>
+
+
+    <!--content-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dir_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+
+        app:layout_constraintTop_toBottomOf="@id/bg_explorer" />
+
+    <!--no folders-->
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/empty_dir"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        android:visibility="gone" />
+
+    <!--add folder-->
+    <LinearLayout
+        android:id="@+id/add_folder_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_round"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dir_list">
+
+        <ImageView
+            android:id="@+id/iv_add_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:id="@+id/tv_add_folder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/dialog_chooser_add_folder"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:id="@+id/et_add_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/dialog_chooser_add_folder_hint"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!--separator -->
+    <View
+        android:id="@+id/separator_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/add_folder_wrapper" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
